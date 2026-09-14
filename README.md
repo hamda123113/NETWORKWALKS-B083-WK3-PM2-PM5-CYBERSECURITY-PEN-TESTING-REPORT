@@ -485,12 +485,11 @@ The following screenshots are included as evidence of the activities performed d
 
 ---
 
-# 👤 Author
+**👤 Author**
 
-**HAMDA RAZA**  
-Cybersecurity Professional: **B083**  
+**Hamda Raza**  
+Cybersecurity Professional **B083**  
 LinkedIn: [Hamda Rashid](https://www.linkedin.com/in/hamda-rashid-67a157356/)
----
 
 # 📌 Project Information
 
