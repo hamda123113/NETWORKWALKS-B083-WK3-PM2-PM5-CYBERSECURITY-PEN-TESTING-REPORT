@@ -487,11 +487,9 @@ The following screenshots are included as evidence of the activities performed d
 
 # 👤 Author
 
-**[YOUR NAME]**  
-Cybersecurity Professional **[YOUR BATCH]**  
-GitHub: [YOUR GITHUB PROFILE]  
-LinkedIn: [YOUR LINKEDIN PROFILE]
-
+**HAMDA RAZA**  
+Cybersecurity Professional: **B083**  
+LinkedIn: [Hamda Rashid](https://www.linkedin.com/in/hamda-rashid-67a157356/)
 ---
 
 # 📌 Project Information
@@ -499,7 +497,7 @@ LinkedIn: [YOUR LINKEDIN PROFILE]
 **Program Name:** Cybersecurity Program at Networkwalks  
 **Week:** 02  
 **Modules:** W2-PM1 (Multiple Kali Tools) | W2-PM5 (Zenmap Scanning)  
-**Repository:** GitHub
+**Repository:** [GitHub](https://github.com/hamda123113/NETWORKWALKS-B083-WK3-PM2-PM5-CYBERSECURITY-PEN-TESTING-REPORT)
 
 ---
 
