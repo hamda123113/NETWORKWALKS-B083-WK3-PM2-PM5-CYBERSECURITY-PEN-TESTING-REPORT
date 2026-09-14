@@ -5,7 +5,7 @@
 
 | **Pentester Name**<br>**(Cybersecurity Professional)** | **HAMDA RAZA** |
 |---|---|
-| **Program/Batch** | **B083-NETOWKRWALKS** |
+| **Program/Batch** | **B083-NETWOKRWALKS** |
 | **Date** | **14-09-2026** |
 | **Modules completed** | W2-PM1 (Multiple Kali Tools)<br>W2-PM5 (Zenmap Scanning) |
 | **Client/Target** | 1. Networkwalks (secured written permission already)<br>2. My own local LAN Network |
@@ -26,7 +26,7 @@ Unauthorized access, scanning, or security testing may result in legal consequen
 
 # 2. Introduction
 
-This report covers the footprinting of the **netowkrwalks.com** using multiple Kali Linux tools (W2-PM1) and scanning of my own local network using **Zenmap** (W2-PM5).
+This report covers the footprinting of the **netwokrwalks.com** using multiple Kali Linux tools (W2-PM1) and scanning of my own local network using **Zenmap** (W2-PM5).
 
 The footprinting phase focuses on gathering publicly available information about the authorized target, while the scanning phase focuses on identifying active hosts and available network information within my authorized/local network.
 
@@ -225,7 +225,7 @@ DNS information can help a security professional understand the external infrast
 
 ### Evidence
 
-![DNSRecon Result](5.png)
+![DNSRecon Result](6.png)
 
 ---
 
@@ -276,7 +276,7 @@ Zenmap was used with the **Ping Scan** profile to discover active hosts on the a
 
 ### Nmap Command
 
-    nmap -sn 192.168.56.1/24
+    nmap -sn 192.168.56.1/24'
 
 ### Scan Result
 
@@ -353,7 +353,7 @@ The following table summarizes the observations made during the footprinting and
 | 2 | Web technology information exposed | WhatWeb identified web technologies | May assist technology fingerprinting | Medium |
 | 3 | Server IP address identifiable | Nslookup resolved the domain to an IP address | Provides information about the network location of the web service | Low |
 | 4 | HTTP technical information exposed | Curl returned HTTP response headers | May assist technology fingerprinting and further enumeration | Low |
-| 5 | WAF technology identifiable | Wafw00f identified [YOUR RESULT] | Reveals information about the web application's security architecture | Low |
+| 5 | WAF technology identifiable | Wafw00f identified **ModSecurity (SpiderLabs) WAF** | Reveals information about the web application's security architecture | Low |
 | 6 | DNS infrastructure information exposed | DNSRecon identified DNS-related records | DNS information can help build an external infrastructure profile | Medium |
 | 7 | Live host visible on local network | Zenmap identified a live host | Unexpected or unauthorized devices may require investigation | Medium |
 
@@ -482,6 +482,24 @@ The following screenshots are included as evidence of the activities performed d
 ### Zenmap Topology
 
 ![Zenmap Topology Evidence](9.png)
+
+---
+
+# 👤 Author
+
+**[YOUR NAME]**  
+Cybersecurity Professional **[YOUR BATCH]**  
+GitHub: [YOUR GITHUB PROFILE]  
+LinkedIn: [YOUR LINKEDIN PROFILE]
+
+---
+
+# 📌 Project Information
+
+**Program Name:** Cybersecurity Program at Networkwalks  
+**Week:** 02  
+**Modules:** W2-PM1 (Multiple Kali Tools) | W2-PM5 (Zenmap Scanning)  
+**Repository:** GitHub
 
 ---
 
