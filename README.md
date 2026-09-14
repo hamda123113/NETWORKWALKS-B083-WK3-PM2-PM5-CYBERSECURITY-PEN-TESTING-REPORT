@@ -300,7 +300,7 @@ Network discovery helps a security professional understand which devices are act
 
 ### Evidence
 
-![Zenmap Ping Scan](7.png)
+![Zenmap Ping Scan](11.png)
 
 ---
 
