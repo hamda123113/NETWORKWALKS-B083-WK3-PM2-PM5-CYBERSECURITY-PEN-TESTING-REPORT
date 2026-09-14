@@ -153,7 +153,7 @@ Identifying the IP address provides information about the network location of th
 
 ### Evidence
 
-![Nslookup Result](3.png)
+![Nslookup Result](4.png)
 
 ---
 
@@ -177,7 +177,7 @@ HTTP response headers may expose technical information that can assist technolog
 
 ### Evidence
 
-![Curl Result](4.png)
+![Curl Result](5.png)
 
 ---
 
