@@ -260,7 +260,7 @@ The `ipconfig` command was used to identify the network interfaces and determine
 
 ### Evidence
 
-![IP Configuration](Screenshots/ipconfig.png)
+![IP Configuration](10.png)
 
 ---
 
@@ -272,28 +272,23 @@ Zenmap was used with the **Ping Scan** profile to discover active hosts on the a
 
 ### Target/Subnet
 
-    [YOUR NETWORK/SUBNET]
+    192.168.56.1/24
 
 ### Nmap Command
 
-    nmap -sn [YOUR NETWORK/SUBNET]
+    nmap -sn 192.168.56.1/24
 
 ### Scan Result
 
-**Total IP addresses scanned:** [NUMBER]
+**Total IP addresses scanned:** 1
 
-**Live hosts discovered:** [NUMBER]
+**Live hosts discovered:** 1
 
 ### Live Hosts Identified
 
 | **#** | **IP Address** | **MAC Address** | **Status** |
 |---|---|---|---|
-| 1 | [IP ADDRESS] | [MAC ADDRESS / NOT AVAILABLE] | Up |
-| 2 | [IP ADDRESS] | [MAC ADDRESS / NOT AVAILABLE] | Up |
-| 3 | [IP ADDRESS] | [MAC ADDRESS / NOT AVAILABLE] | Up |
-| 4 | [IP ADDRESS] | [MAC ADDRESS / NOT AVAILABLE] | Up |
-
-> **Note:** Add or remove rows according to the actual results obtained from your Zenmap scan.
+| 1 | 192.168.56.1 | NOT AVAILABLE | Up |
 
 ### Observation
 
@@ -305,40 +300,11 @@ Network discovery helps a security professional understand which devices are act
 
 ### Evidence
 
-![Zenmap Ping Scan](Screenshots/zenmap-scan.png)
+![Zenmap Ping Scan](7.png)
 
 ---
 
-## 5.2.3 MAC Address Identification
-
-To review the IP-to-MAC address mappings available on the Windows system, I used the Windows ARP table.
-
-### Command Used
-
-    arp -a
-
-### Result
-
-| **IP Address** | **Physical / MAC Address** | **Type** |
-|---|---|---|
-| [IP ADDRESS] | [MAC ADDRESS] | [Dynamic/Static] |
-| [IP ADDRESS] | [MAC ADDRESS] | [Dynamic/Static] |
-| [IP ADDRESS] | [MAC ADDRESS] | [Dynamic/Static] |
-| [IP ADDRESS] | [MAC ADDRESS] | [Dynamic/Static] |
-
-### Observation
-
-The ARP table displayed IP-to-MAC address mappings available to the local system.
-
-Only MAC addresses actually observed in the ARP table or Zenmap output should be documented in the final report.
-
-### Evidence
-
-![ARP Table](Screenshots/arp.png)
-
----
-
-## 5.2.4 Zenmap Topology
+## 5.2.3 Zenmap Topology
 
 After completing the network scan, I opened the **Topology** section in Zenmap to visualize the discovered hosts and network relationships.
 
@@ -350,7 +316,7 @@ The topology illustrates the relationship between the scanning system and the ho
 
 ### Evidence
 
-![Zenmap Topology](Screenshots/zenmap-topology.png)
+![Zenmap Topology](8.png)
 
 ---
 
@@ -358,12 +324,12 @@ The topology illustrates the relationship between the scanning system and the ho
 
 | **Item** | **Result** |
 |---|---|
-| **Network/Subnet Scanned** | [YOUR NETWORK/SUBNET] |
+| **Network/Subnet Scanned** | 192.168.56.1/24 |
 | **Scan Type** | Ping Scan |
-| **Nmap Command** | `nmap -sn [YOUR NETWORK/SUBNET]` |
-| **Total IP Addresses Scanned** | [NUMBER] |
-| **Live Hosts Found** | [NUMBER] |
-| **MAC Addresses Identified** | [NUMBER] |
+| **Nmap Command** | `nmap -sn 192.168.56.1/24 |
+| **Total IP Addresses Scanned** |     1    |
+| **Live Hosts Found** |     1    |
+| **MAC Addresses Identified** | not available |
 | **Topology Generated** | Yes |
 
 ### Current Scan Result
@@ -376,10 +342,6 @@ Based on the actual Zenmap scan performed during this practical:
 - **Total IP addresses scanned:** 256
 - **Live hosts found:** 1
 - **Live host identified:** `192.168.56.1`
-
-> Update the above values if a later scan produces different results.
-
----
 
 # 7. Findings Summary
 
@@ -395,9 +357,6 @@ The following table summarizes the observations made during the footprinting and
 | 6 | DNS infrastructure information exposed | DNSRecon identified DNS-related records | DNS information can help build an external infrastructure profile | Medium |
 | 7 | Live host visible on local network | Zenmap identified a live host | Unexpected or unauthorized devices may require investigation | Medium |
 
-> **Important:** The findings and risk levels above should be reviewed against your actual evidence before final submission. Only document findings that are supported by your screenshots and command output.
-
----
 
 # 8. Risk Analysis / Impact
 
@@ -420,7 +379,6 @@ Further authorized security testing would be required to validate any actual vul
 | **Medium** | Security concern requiring review and appropriate mitigation |
 | **Low** | Limited security impact or informational finding |
 
----
 
 # 9. Recommendations
 
@@ -462,8 +420,6 @@ Network topology and device information should be documented and updated regular
 
 Reconnaissance, scanning, enumeration, and other security testing activities should only be performed against systems and networks where appropriate authorization has been provided.
 
----
-
 # 10. Conclusion
 
 During this Week 2 cybersecurity practical, I completed activities covering **footprinting, reconnaissance, and network scanning**.
@@ -488,27 +444,27 @@ The following screenshots are included as evidence of the activities performed d
 
 ### WHOIS
 
-![WHOIS Evidence](Screenshots/whois.png)
+![WHOIS Evidence](1.png)
 
 ### WhatWeb
 
-![WhatWeb Evidence](Screenshots/whatweb.png)
+![WhatWeb Evidence](2.png)
 
 ### Nslookup
 
-![Nslookup Evidence](Screenshots/nslookup.png)
+![Nslookup Evidence](3.png)
 
 ### Curl
 
-![Curl Evidence](Screenshots/curl.png)
+![Curl Evidence](4.png)
 
 ### Wafw00f
 
-![Wafw00f Evidence](Screenshots/wafw00f.png)
+![Wafw00f Evidence](5.png)
 
 ### DNSRecon
 
-![DNSRecon Evidence](Screenshots/dnsrecon.png)
+![DNSRecon Evidence](6.png)
 
 ---
 
@@ -516,43 +472,16 @@ The following screenshots are included as evidence of the activities performed d
 
 ### Windows IP Configuration
 
-![IP Configuration Evidence](Screenshots/ipconfig.png)
+![IP Configuration Evidence](10.png)
 
 ### Zenmap Ping Scan
 
-![Zenmap Scan Evidence](Screenshots/zenmap-scan.png)
+![Zenmap Scan Evidence](7.png)
 
-### ARP Table
-
-![ARP Evidence](Screenshots/arp.png)
 
 ### Zenmap Topology
 
-![Zenmap Topology Evidence](Screenshots/zenmap-topology.png)
+![Zenmap Topology Evidence](9.png)
 
 ---
 
-# 12. Project Structure
-
-```text
-Week-02-Penetration-Testing/
-│
-├── README.md
-│
-├── Report/
-│   └── Penetration_Testing_Report.pdf
-│
-├── Screenshots/
-│   ├── whois.png
-│   ├── whatweb.png
-│   ├── nslookup.png
-│   ├── curl.png
-│   ├── wafw00f.png
-│   ├── dnsrecon.png
-│   ├── ipconfig.png
-│   ├── zenmap-scan.png
-│   ├── arp.png
-│   └── zenmap-topology.png
-│
-└── Evidence/
-    └── commands.txt
